@@ -1,7 +1,9 @@
 #!/bin/sh
 
-# script/test: Run the test suite for the application. Optionally pass in a path
-# to an individual test file to run a single test.
+# script/test: Run lints for the katas and scaffolding.
+#
+# Note that this file does not run the kata tests, because we epect them to
+# fail in this base repository. Use `./script/run` to actually run the tests.
 
 set -e
 
@@ -11,17 +13,12 @@ if [ -n "$DEBUG" ]; then
 	set -x
 fi
 
-TEST_FILE=$1
+echo "===> Linting shell scripts..."
+./.shellcheck.sh
 
-if [ -n "$TEST_FILE" ]; then
-	echo "==> Running the tests matching '$TEST_FILE'..."
-	echo "Unit tests not yet set up."
-	exit 1
-else
-	echo "===> Linting shell scripts..."
-	./.shellcheck.sh
+echo "===> Linting PHP..."
+./vendor/bin/php-cs-fixer fix --dry-run -v --diff
+./vendor/bin/psalm
 
-	echo "===> Linting PHP..."
-	./vendor/bin/php-cs-fixer fix --dry-run -v --diff
-	./vendor/bin/psalm
-fi
+echo "===> Check for 100% test coverage..."
+phpdbg -qrr ./vendor/bin/kahlan --coverage=4 --no-colors | grep "Total: 100.00%"
