@@ -23,4 +23,5 @@ else
 
 	echo "===> Linting PHP..."
 	./vendor/bin/php-cs-fixer fix --dry-run -v --diff
+	./vendor/bin/psalm
 fi
