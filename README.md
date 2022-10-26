@@ -12,3 +12,9 @@ To get the project into an initial state, including installing dependencies:
 ```shell
 ./script/setup
 ```
+
+To run the available lints and unit tests, first run `script/setup`, and then:
+
+```shell
+./script/test
+```
