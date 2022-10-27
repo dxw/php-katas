@@ -144,7 +144,7 @@ example `it passes if max(n, m) == n where n > m > 0`.
 For the first two tests described above, the output tells us that the function
 should have returned `2` but actually returned `0`.
 
-## Completing each kata
+### Completing each kata
 
 The katas themselves can be found in the `src/` directory. Each Kata has a
 single function for you to write, with a brief, informal, specification
@@ -161,7 +161,7 @@ For each kata, you should:
 1. Request code review for your pull request.
 1. Once your code has been reviewed, merge your branch with a merge commit.
 
-## Completing `Kata0`
+### Completing `Kata0`
 
 For example, in `src/Kata0.php` you will see:
 
