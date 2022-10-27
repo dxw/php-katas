@@ -4,11 +4,25 @@
 	},
 	"require-dev": {
 		"dxw/php-cs-fixer-config": "^2.1",
-		"vimeo/psalm": "^4.29"
+		"vimeo/psalm": "^4.29",
+		"kahlan/kahlan": "^5.2"
+	},
+	"autoload": {
+		"psr-4": {
+			"Katas\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Katas\\Spec\\": "spec/"
+		}
 	},
 	"config": {
 		"platform": {
 			"php": "7.4.32"
 		}
+	},
+	"suggest": {
+		"ext-phpdbg": "PHPDBG extension to allow to get coverage report"
 	}
 }
