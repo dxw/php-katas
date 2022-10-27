@@ -5,6 +5,15 @@
 This repository contains small exercises (katas) which can be used to practice
 PHP coding. These are aimed at developers who are new to PHP.
 
+## Contents
+
+- [Getting started](#getting-started)
+- [The katas](#the-katas)
+	- [Running each kata](#running-each-kata)
+	- [Completing each kata](#completing-each-kata)
+	- [Completing the first kata](#completing-the-first-kata)
+	- [Fixing poorly formatted code](#fixing-poorly-formatted-code)
+
 ## Getting started
 
 Start by forking this repository into your own space on GitHub by pressing the
@@ -161,7 +170,7 @@ For each kata, you should:
 1. Request code review for your pull request.
 1. Once your code has been reviewed, merge your branch with a merge commit.
 
-### Completing `Kata0`
+### Completing the first kata
 
 For example, in `src/Kata0.php` you will see:
 
