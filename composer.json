@@ -1,0 +1,14 @@
+{
+	"require": {
+		"php": "^7.4"
+	},
+	"require-dev": {
+		"dxw/php-cs-fixer-config": "^2.1",
+		"vimeo/psalm": "^4.29"
+	},
+	"config": {
+		"platform": {
+			"php": "7.4.32"
+		}
+	}
+}
