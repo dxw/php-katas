@@ -1,7 +1,18 @@
 # PHP katas
 
+![CI status](https://github.com/dxw/php-katas/actions/workflows/continuous-integration.yml/badge.svg)
+
 This repository contains small exercises (katas) which can be used to practice
 PHP coding. These are aimed at developers who are new to PHP.
+
+## Contents
+
+- [Getting started](#getting-started)
+- [The katas](#the-katas)
+	- [Running each kata](#running-each-kata)
+	- [Completing each kata](#completing-each-kata)
+	- [Completing the first kata](#completing-the-first-kata)
+	- [Fixing poorly formatted code](#fixing-poorly-formatted-code)
 
 ## Getting started
 
@@ -142,7 +153,7 @@ example `it passes if max(n, m) == n where n > m > 0`.
 For the first two tests described above, the output tells us that the function
 should have returned `2` but actually returned `0`.
 
-## Completing each kata
+### Completing each kata
 
 The katas themselves can be found in the `src/` directory. Each Kata has a
 single function for you to write, with a brief, informal, specification
@@ -159,7 +170,7 @@ For each kata, you should:
 1. Request code review for your pull request.
 1. Once your code has been reviewed, merge your branch with a merge commit.
 
-## Completing `Kata0`
+### Completing the first kata
 
 For example, in `src/Kata0.php` you will see:
 
