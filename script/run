@@ -14,6 +14,9 @@ fi
 
 TEST_FILE=$1
 
+echo "==> Fixing identation..."
+./vendor/bin/php-cs-fixer fix
+
 if [ -n "$TEST_FILE" ]; then
 	KATA_NAME=$(basename "${TEST_FILE}" | cut -f 1 -d '.')
 	echo "==> Running ${KATA_NAME}..."
