@@ -7,6 +7,8 @@ declare(strict_types=1);
 
 namespace Katas;
 
+use Katas\Kata4;
+
 /**
  * Kata5.
  */
@@ -31,7 +33,9 @@ final class Kata5
 	 */
 	public static function median(array $array): int
 	{
-		// TODO: Complete this function!
-		return 0;
+		$arrayLength = count($array);
+		$sum = array_sum($array);
+		$median = intval($sum / $arrayLength);
+		return $median;
 	}
 }
