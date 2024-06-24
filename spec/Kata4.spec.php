@@ -9,10 +9,10 @@ use Katas\Kata4;
  */
 function isArraySorted($array): bool
 {
-	$i=0;
+	$i = 0;
 	$total_elements = count($array);
 	while ($total_elements > 1) {
-		if ($array[$i] <= $array[$i+1]) {
+		if ($array[$i] <= $array[$i + 1]) {
 			$i++;
 			$total_elements--;
 		} else {
