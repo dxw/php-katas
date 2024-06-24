@@ -29,10 +29,10 @@ describe("->median", function () {
 	it("returns the middle element of an even sized array with sorted elements", function () {
 		$d0 = [0, 1];
 		$d1 = [1, 2, 3, 4];
-		$d2 = [-1, -2, -3, -4];
+		$d2 = [-4, -3, -2, -1];
 		expect(Kata5::median($d0))->toBe(0);
 		expect(Kata5::median($d1))->toBe(2);
-		expect(Kata5::median($d2))->toBe(-2);
+		expect(Kata5::median($d2))->toBe(-3);
 	});
 
 	it("returns the middle element of an odd sized array with unsorted elements", function () {
