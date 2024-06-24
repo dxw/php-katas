@@ -23,7 +23,6 @@ final class Kata0
 	 */
 	public static function max(int $n1, int $n2): int
 	{
-		// TODO: Complete this function!
-		return 0;
+		return $n1 > $n2 ? $n1 : $n2;
 	}
 }
