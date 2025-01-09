@@ -24,6 +24,14 @@ final class Kata0
 	public static function max(int $n1, int $n2): int
 	{
 		// TODO: Complete this function!
-		return 0;
+		{
+			if ($n1 > $n2) {
+				return $n1;  // Return $n1 if it is greater than $n2
+			} else {
+				return $n2;  // Otherwise, return $n2
+			}
+		}
 	}
 }
+
+
